@@ -5,7 +5,7 @@ import { useAuth } from "./AuthProvider";
 import { toast } from "react-toastify";
 
 const Navbar = () => {
-	const [showNavbar, setShowNavbar] = useState(false);
+	const [showNavbar, setShowNavbar] = useState(true);
 	const navigate = useNavigate();
 	const { setToken, token } = useAuth();
 
@@ -33,7 +33,7 @@ const Navbar = () => {
 						{/* <FaAlignJustify /> */}
 					</div>
 				</div>
-				<nav className={`menu ${showNavbar ? "active" : ""}`}>
+				<nav className={`menu ${showNavbar ? "close" : ""}`}>
 					<ul>
 						<li>
 							<NavLink to='/' onClick={() => setShowNavbar(true)}>

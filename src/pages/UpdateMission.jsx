@@ -77,7 +77,7 @@ const UpdateMission = () => {
 	}
 
 	return (
-		<div>
+		<div className='dashboard_container'>
 			<h1>Update Mission</h1>
 			<MissionForm
 				type='update'

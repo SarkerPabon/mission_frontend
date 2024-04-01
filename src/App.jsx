@@ -29,7 +29,7 @@ function App() {
 
 					<Routes>
 						<Route path='/' element={<Dashboard />} />
-						<Route path='/:id' element={<MissionDetails />} />
+						<Route path='/survay/:id' element={<MissionDetails />} />
 						<Route path='/signup' element={<Signup />} />
 						<Route path='/login' element={<Login />} />
 						<Route

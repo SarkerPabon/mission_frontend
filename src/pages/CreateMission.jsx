@@ -33,7 +33,7 @@ const CreateMission = () => {
 					Authorization: `Bearer ${token.token}`,
 				},
 			});
-			console.log("Create Response:", response.data);
+			// console.log("Create Response:", response.data);
 			setLoading(false);
 			navigate("/");
 			toast.success("Create Mission Successfully !");
@@ -50,7 +50,7 @@ const CreateMission = () => {
 	}
 
 	return (
-		<div>
+		<div className='dashboard_container'>
 			<h1>Create Mission</h1>
 			<MissionForm type='add' onSubmit={handleCreateMission} error={error} />
 		</div>

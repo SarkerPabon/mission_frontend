@@ -28,7 +28,7 @@ const Login = () => {
 				"/api/users/login",
 				submittedData
 			);
-			console.log("Login Response:", response.data);
+			// console.log("Login Response:", response.data);
 			localStorage.setItem("token", JSON.stringify(response.data));
 			setLoading(false);
 			setToken(response.data);

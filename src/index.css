@@ -50,10 +50,20 @@ nav ul {
 	align-items: center;
 }
 
+nav ul li {
+	cursor: pointer;
+	padding: 0.5rem;
+}
+
 .user,
 nav ul a {
 	font-size: 1rem;
 	color: #000;
+}
+
+nav ul a.active,
+nav ul a:hover {
+	text-decoration: underline;
 }
 
 .logo {
@@ -246,6 +256,11 @@ button {
 	flex: 1;
 }
 
+.card-body p {
+	text-align: left;
+	padding: 10px 0;
+}
+
 .card-footer {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -262,6 +277,36 @@ button {
 	border-radius: 5px;
 	cursor: pointer;
 } */
+
+/* No Match */
+.not-found-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 80vh;
+}
+
+.not-found-title {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+.not-found-text {
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+}
+
+.not-found-link {
+	font-size: 1rem;
+	text-decoration: none;
+	color: blue;
+	transition: color 0.3s;
+}
+
+.not-found-link:hover {
+	color: darkblue;
+}
 
 @keyframes spin {
 	0% {
@@ -294,7 +339,7 @@ button {
 	header {
 		position: absolute;
 		background: white;
-		top: 0;
+		top: 16px;
 		right: 0;
 		/* width: 90vw; */
 		margin: 0 auto;
@@ -312,7 +357,7 @@ button {
 		animation: slideDown 0.5s ease;
 	} */
 
-	.menu.active {
+	.menu.close {
 		display: none;
 	}
 
@@ -324,6 +369,11 @@ button {
 
 	.menu-icon {
 		display: block;
+	}
+
+	.menu {
+		height: 100vh;
+		overflow: hidden;
 	}
 
 	nav ul {
@@ -339,7 +389,7 @@ button {
 	/* Dashboard Container */
 	.dashboard_container,
 	.form {
-		margin-top: 20px;
+		padding-top: 100px;
 	}
 	.dashboard_container .cards {
 		grid-template-columns: repeat(1, 1fr);

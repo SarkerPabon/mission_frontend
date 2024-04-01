@@ -30,7 +30,7 @@ const MissionDetails = () => {
 	}
 
 	return (
-		<div>
+		<div className='dashboard_container'>
 			<h1>{mission.title} Survey</h1>
 			<br />
 			<SurvayForm />

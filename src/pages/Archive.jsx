@@ -11,7 +11,7 @@ const Archive = () => {
 		axiosInstance
 			.get("/api/archive")
 			.then((response) => {
-				console.log(response.data);
+				// console.log(response.data);
 				setMissions(response.data);
 				setLoading(false);
 			})

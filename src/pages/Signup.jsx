@@ -24,7 +24,7 @@ const Signup = () => {
 			setError("");
 			// Send form data to the server
 			const response = await axiosInstance.post("/api/users", submittedData);
-			console.log("Signup Response:", response.data);
+			// console.log("Signup Response:", response.data);
 			localStorage.setItem("token", JSON.stringify(response.data));
 			setToken(response.data);
 			setLoading(false);
