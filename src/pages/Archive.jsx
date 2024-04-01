@@ -9,7 +9,7 @@ const Archive = () => {
 
 	useEffect(() => {
 		axiosInstance
-			.get("/api/archive")
+			.get("/api/missions/archive")
 			.then((response) => {
 				// console.log(response.data);
 				setMissions(response.data);

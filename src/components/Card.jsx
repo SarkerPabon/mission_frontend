@@ -16,7 +16,11 @@ const Card = ({ title, description, status, id }) => {
 				<p>Status: {status}</p>
 			</div>
 			<div className='card-body'>
-				<p>{description.slice(0, 150) + "...."}</p>
+				<p>
+					{description.length > 150
+						? description.slice(0, 150) + " ...."
+						: description}
+				</p>
 			</div>
 			<div className='card-footer' style={{ display: !status ? "none" : "" }}>
 				<Link to={`/survay/${id}`} className='btn'>

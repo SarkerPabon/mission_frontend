@@ -30,8 +30,9 @@ const MissionDetails = () => {
 	}
 
 	return (
-		<div className='dashboard_container'>
+		<div className='dashboard_container mission_details_container'>
 			<h1>{mission.title} Survey</h1>
+			<p style={{ padding: "10px" }}>{mission.description}</p>
 			<br />
 			<SurvayForm />
 		</div>
