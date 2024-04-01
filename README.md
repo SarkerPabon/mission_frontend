@@ -1,8 +1,12 @@
-# React + Vite
+# Set Up Instruction (Locally)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Clone this repository
+- Install All Dependencies with NPM  (Run npm install)
+- Create .env file in Root Folder (If it does not exist)
+- Now set below variable with your local backend url
 
-Currently, two official plugins are available:
+## Example 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### VITE_SERVER_URL="LOCAL_BACKEND_URL"
+
+### VITE_SERVER_URL="https://mission-backend.vercel.app"
